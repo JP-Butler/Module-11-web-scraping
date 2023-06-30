@@ -1,7 +1,7 @@
-# Module-11-web-scraping Challenge
+# Module-11-Web-Scraping Challenge
 ---------------------------------------------------------------
 
-## Description
+## Mars News & Data Website Scraping
 This challenge puts to the test the ***Web-Scraping*** skills I've learned in the 11th Module-Data Collection of the Carelton Data Analytics Boot Camp. Such new skills as identifying *HTML* elements and their *id* and *class*  attributes. Extracting information with automated browsing with *Splinter* and *HTML parsing* with ***Beautiful Soup***, the new Python Library introduced this week for efficient Web-Scraping. This challenge continues on from the core skills learned such as organizing and storing data, analyzing data, and then visually communicating your insights with an extra emphasis on the first step ***Data Collection***.
 
 ## Table of Contents
@@ -29,7 +29,7 @@ To properly run this project please make sure the following are installed:
 * __Beautiful Soup__
 * __html5lib__ and __lxml__
 
-Current Chromedriver Release Download link below:
+Current Chromedriver Release Download link:
 [Install Chromedriver](https://chromedriver.chromium.org/downloads)
 
 To download the rest of the packages run the following shell commands: <br>
@@ -40,7 +40,23 @@ pip install lxml
 ```
 
 ## Usage
-
-
+This project was created using *Jupyter Notebook* for indiividual cell running. All cells should be ran in top to bottom sequence as standard practice states. <br>
+The below 3 code blocks will: <br>
+1. Import necessary depencies to run code
+2. Open the Google Chrome browser.
+3. Access the website used in part 1, the Mars News Site.
+```
+# Import Splinter and BeautifulSoup
+from splinter import Browser
+from bs4 import BeautifulSoup as soup
+```
+```
+browser = Browser('chrome')
+```
+```
+# Visit the Mars news site
+url = 'https://static.bc-edx.com/data/web/mars_news/index.html'
+browser.visit(url)
+```
 ## Contributing 
 Justin Butler
