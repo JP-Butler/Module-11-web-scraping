@@ -16,7 +16,7 @@ As described above, in this challenge I had to scrape the data from two websites
 ```
 {'title': "10 Years Since Landing, NASA's Curiosity Mars Rover Still Has Drive",
   'preview': 'Despite signs of wear, the intrepid spacecraft is about to start an exciting new chapter of its mission as it climbs a Martian mountain.'}
-```  <br>
+```  
 Part 2 goes more in depth, requiring me to scrape data from a table on the Mars Temperature Data Site. To do so I scaped the table elements, seperated the data from the column headers, looped through the data and appended them to lists in order to create a clean dataframe like so: 
 ![Alt text](mars_df-1.png)  
 Some data cleaning followed this, where I changed the incorrect data types in preparation for the next step Data Analysis. In the the Data Analyis portion I answered several questions about the scraped data such as, the average temperature by month, identifying the hottest and coldest months and ow many terrestrial (earth) days are there in a Martian year to name a few. Finally the data was saved by writing it to a csv file.
