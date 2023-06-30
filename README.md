@@ -16,7 +16,8 @@ As described above, in this challenge I had to scrape the data from two websites
 **Part 1** of the challenge covers the Mars News Site, where I needed to extract the title and preview text elements and finally store them in a clean, easily read JSON dictionary format, e.g.: <br>
 ```
 {'title': "10 Years Since Landing, NASA's Curiosity Mars Rover Still Has Drive",
-  'preview': 'Despite signs of wear, the intrepid spacecraft is about to start an exciting new chapter of its mission as it climbs a Martian mountain.'}
+  'preview': 'Despite signs of wear, the intrepid spacecraft is about to start an 
+  exciting new chapter of its mission as it climbs a Martian mountain.'}
 ```  
 **Part 2** goes more in depth, requiring me to scrape data from a table on the Mars Temperature Data Site. To do so I scaped the table elements, seperated the data from the column headers, looped through the data and appended them to lists in order to create a clean dataframe like so: 
 ![Alt text](mars_df-1.png)  
@@ -40,7 +41,7 @@ pip install lxml
 ```
 
 ## Usage
-This project was created using *Jupyter Notebook* for indiividual cell running. All cells should be ran in top to bottom sequence as standard practice states. <br>
+This project was created using *Jupyter Notebook* for efficient individual cell execution and error debugging. All cells should be run in top to bottom sequence as standard practice states. <br>
 The below 3 code blocks will: <br>
 1. Import necessary depencies to run code
 2. Open the Google Chrome browser.
@@ -58,5 +59,6 @@ browser = Browser('chrome')
 url = 'https://static.bc-edx.com/data/web/mars_news/index.html'
 browser.visit(url)
 ```
+
 ## Contributing 
 Justin Butler
