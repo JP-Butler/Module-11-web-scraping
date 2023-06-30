@@ -33,9 +33,11 @@ Current Chromedriver Release Download link below:
 [Install Chromedriver](https://chromedriver.chromium.org/downloads)
 
 To download the rest of the packages run the following shell commands: <br>
-```pip install "splinter[selenium4]"
+```
+pip install "splinter[selenium4]"
 pip install html5lib
-pip install lxml```
+pip install lxml
+```
 
 ## Usage
 
